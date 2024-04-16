@@ -1,5 +1,7 @@
-# FILL IN INFO ABOUT YOUR GAME HERE. 
+# final game
 
-DO NOT LEAVE IT LIKE THIS!!!
+5 things learned from class, 2 of the 5 from after the midterm
 
-Please? Please, give me content. I'm begging you. It's not that hard. Thanks.
+singleton, high score tracking, click/drag (now with physics), scriptable objects, queue
+
+pool slash pinball game where you shoot various objects at each other
