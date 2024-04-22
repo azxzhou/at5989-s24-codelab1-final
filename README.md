@@ -4,4 +4,4 @@
 
 singleton, high score tracking, click/drag (now with physics), scriptable objects, queue
 
-pool slash pinball game where you shoot various objects at each other
+that one mario party minigame where you shoot a cannon at a wall of blocks
