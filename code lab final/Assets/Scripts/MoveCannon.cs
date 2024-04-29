@@ -1,10 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 public class MoveCannon : MonoBehaviour
 {
-    public int speed = 10;
+    float rotationSpeed = 45;
+    float moveSpeed = 10;
+    Vector3 currentEulerAngles;
+    float x;
+    float y;
+    float z;
     
     // Start is called before the first frame update
     void Start()
@@ -17,22 +24,22 @@ public class MoveCannon : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Rotate(Vector3.up, Time.deltaTime);
+            transform.localEulerAngles += Vector3.right * rotationSpeed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Rotate(Vector3.down, Time.deltaTime);
+            transform.localEulerAngles += Vector3.left * rotationSpeed * Time.deltaTime;
         }
-
+        
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position += Vector3.left * speed * Time.deltaTime;
+            transform.position += Vector3.left * moveSpeed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position += Vector3.right * speed * Time.deltaTime;
+            transform.position += Vector3.right * moveSpeed * Time.deltaTime;
         }
         
     }
