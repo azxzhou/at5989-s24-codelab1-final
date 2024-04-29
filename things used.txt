@@ -1,0 +1,7 @@
+- singletons
+- high score tracking
+- ????
+
+
+- scriptable objects (reload level)
+- 
