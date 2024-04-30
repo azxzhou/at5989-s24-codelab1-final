@@ -75,6 +75,9 @@ public class ASCIIGm : MonoBehaviour
                     case 'W': //wall
                         newObject = Instantiate(Resources.Load<GameObject>("Prefabs/Wall"));
                         break;
+                    case 'H': //hazard
+                        newObject = Instantiate(Resources.Load<GameObject>("Prefabs/Hazard"));
+                        break;
                     case 'P': //player
                         newObject = Instantiate(Resources.Load<GameObject>("Prefabs/Player"));
                         break;
