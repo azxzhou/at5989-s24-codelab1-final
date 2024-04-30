@@ -4,20 +4,14 @@ using UnityEngine;
 
 public class WASDController : MonoBehaviour
 {
-    int speed = 1;
-    
-    private Vector2 originalPos;
-    private void Start()
-    {
-        originalPos = new Vector2(gameObject.transform.position.x, gameObject.transform.position.y);
-    }
+  Rigidbody2D rb2d;
 
-    void OnTriggerEnter2D(Collider2D other)
+    public float forceAmount = 0.05f;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        if (other.CompareTag("Hazard"))
-        {
-            gameObject.transform.position = originalPos;
-        }
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -25,24 +19,25 @@ public class WASDController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.position = Vector2.up * speed * Time.deltaTime;
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.position = Vector2.down * speed * Time.deltaTime;
+            rb2d.AddForce(Vector2.up * forceAmount);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position = Vector2.left * speed * Time.deltaTime;
+            rb2d.AddForce(Vector2.left * forceAmount);
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            rb2d.AddForce(Vector2.down * forceAmount);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position = Vector2.right * speed * Time.deltaTime;
+            rb2d.AddForce(Vector2.right * forceAmount);
         }
+
+        rb2d.velocity *= 0.1f;
+
     }
-    
-    
 }

@@ -42,7 +42,7 @@ public class ASCIIGm : MonoBehaviour
 
     void Update()
     {
-        instructions.text = "Click and drag yourself through the maze to the goal.";
+        instructions.text = "Use WASD to move through the alley. Drag the obstacles away.";
     }
 
     void LoadLevel()

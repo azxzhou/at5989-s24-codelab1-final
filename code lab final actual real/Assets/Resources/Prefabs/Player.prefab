@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2803173545631504803}
   - component: {fileID: -3985340228568565949}
   - component: {fileID: -595073009733723278}
+  - component: {fileID: -9044203155396045877}
   m_Layer: 0
   m_Name: Player
   m_TagString: Rat
@@ -143,3 +144,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 931f6c10cb2ba1b459ca1ac7ace88f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  forceAmount: 60
+--- !u!50 &-9044203155396045877
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9025146672773381653}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
