@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Name Check.unity
+    guid: d57ba9b242a63b344acdf8f5436a7abf
+  - enabled: 1
+    path: Assets/Scenes/Rat Maze.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/ASCII Maze.unity
+    guid: 811f02dd744b48e4cbeec6d5b292c26d
+  - enabled: 1
+    path: Assets/Scenes/End Scene.unity
+    guid: fdab8d756d26ca64496df8e5d209435f
+  m_configObjects: {}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c50cd7130ebad24eb0d01568220f54a, type: 3}
+  m_Name: 8
+  m_EditorClassIdentifier: 
+  locationName: Seems like the end of the tunnel to the left.
+  north: {fileID: 11400000, guid: 97957d9a0666b6c408e7d01c37503223, type: 2}
+  south: {fileID: 11400000, guid: 604e212af2a576b41a6088319b13c31c, type: 2}
+  east: {fileID: 0}
+  west: {fileID: 11400000, guid: f96b5df4999e8d844926e7b02b0fd1be, type: 2}
